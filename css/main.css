@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+}
+
+/*Hero session*/
+.hero {
+  width: 100%;
+  margin: 1px;
+}
+
+.heading {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../images/desktop-image-hero-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.head {
+  padding: 2.5em 1.3em 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+header .fa-solid {
+  position: absolute;
+  left: 0;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+nav .nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  text-transform: lowercase;
+  font-weight: 600;
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  top: -100px;
+  height: 6em;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0em 2.5em;
+  transition: 0.5s ease-in-out;
+}
+nav .nav-links li a {
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+nav .nav-links li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  color: hsl(0, 0%, 0%);
+  display: block;
+  background-color: hsl(0, 0%, 0%);
+  margin: auto;
+  transition: 0.5s;
+}
+nav .nav-links li a:hover::after {
+  width: 70%;
+}
+nav .fa-solid {
+  position: absolute;
+  left: 0;
+  padding-left: 0.8em;
+  font-size: 25px;
+  color: hsl(0, 0%, 63%);
+  cursor: pointer;
+}
+
+.direction {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  cursor: pointer;
+}
+.direction .fa-solid {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 63%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.direction .fa-solid:hover {
+  background-color: hsl(0, 0%, 27%);
+  transition: 0.5s;
+}
+
+.hero .first-text {
+  padding: 3em 2em;
+  display: grid;
+  gap: 1em;
+  height: auto;
+}
+.hero .first-text p {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.5;
+}
+
+article h1 {
+  font-size: 30px;
+}
+article h1 span {
+  display: block;
+}
+
+article a {
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+article a:hover {
+  color: hsl(0, 0%, 63%);
+  transition: 0.5s;
+}
+
+/*Index*/
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.image img {
+  width: 100%;
+}
+
+.index .second-text {
+  padding: 3em 2em;
+  display: grid;
+  gap: 1em;
+}
+.index .second-text p:first-of-type {
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+.index .second-text p {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=main.css.map */
